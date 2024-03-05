@@ -7,5 +7,12 @@
 | CYCLONE FAMILY         | A Lacklusture Drama of a Student And a Monkey who must Sink a Womanizer in A MySQL Convention | 2006 | PG |
 | FAMILY SWEET      | An Epic Documentary of a Teacher And a Boy who must Escape a Woman in Berlin | 2006 | R |
 
+# Zadanie 3 - Nieaktywni klienci
 
+- Pobierz listę tylko aktywnych klientów
+
+| first_name | last_name | email | active |
+| ---------- | --------- | ----- | ------ |
+| ... | ... | ... | ... |
+  
 
