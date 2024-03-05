@@ -12,10 +12,10 @@ git clone https://github.com/sulmar/sulmar-dsm-sql
 ```
 2. Utwórz bazę danych
 ```
-sqlcmd -S (localdb)\MSSQLLocalDB -d master -E -i sql/sql-server-sakila-schema.sql
+sqlcmd -S your-sql -d master -U your_username -P your_password -i scripts/sql-server-sakila-schema.sql
 ```
 3. Załadowuj przykładowane dane
 ```
-sqlcmd -S (localdb)\MSSQLLocalDB -d sakila -E -i sql/sql-server-sakila-insert-data.sql
+sqlcmd -S your-sql -d sakila -U your_username -P your_password -i scripts/sql-server-sakila-insert-data.sql
 ```
 
