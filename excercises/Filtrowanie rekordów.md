@@ -1,0 +1,11 @@
+# Zadanie 2 - Lista filmów
+
+- Pobierz listę filmów, z kategorii `R` lub `PG` których tytuł zawiera słowo `FAMILY`
+
+| title | description | release_year | rating |
+| ---------------------- | --------------------- | ----------------------------------- | ------------------ |
+| CYCLONE FAMILY         | A Lacklusture Drama of a Student And a Monkey who must Sink a Womanizer in A MySQL Convention | 2006 | PG |
+| FAMILY SWEET      | An Epic Documentary of a Teacher And a Boy who must Escape a Woman in Berlin | 2006 | R |
+
+
+
