@@ -27,7 +27,7 @@ Które filmy generują największe przychody (top 10)?
 
 Wyświetl najczęściej są wypożyczane filmy w podziale na kraj i kategorię
 
-| country | category | rent_count
+| country | category | rent_count |
 | ---------- | --------- | --------- | 
 | ... | ... | ... | 
 
