@@ -20,7 +20,7 @@
 
 - Pobierz płatności z przedziału `0..1` zł
 
-| payment_id | amount | payment_data |
+| payment_id | amount | payment_date |
 | ---------- | --------- | ----- |
 | ... | ... | ... | 
   
