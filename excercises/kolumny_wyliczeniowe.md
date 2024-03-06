@@ -7,3 +7,15 @@
 | Patricia | Johnson | patricia.johnson@sakilacustomer.org | sakilacustomer.org |
 | Linda | Williams | linda.williams@sakilacustomer.org | sakilacustomer.org |
 | ... | ... |  |  |
+
+
+### Rozwiązanie
+``` sql
+SELECT
+   UPPER(LEFT(last_name, 1)) + LOWER(SUBSTRING(last_name, 2, LEN(last_name))) AS capitalized_last_name,
+   UPPER(LEFT(first_name, 1)) + LOWER(SUBSTRING(first_name, 2, LEN(first_name))) AS capitalized_first_name,
+   LOWER(email) as email_normalized,
+   SUBSTRING(email, CHARINDEX('@', email), LEN(email)) AS domian
+FROM
+   customer
+```
