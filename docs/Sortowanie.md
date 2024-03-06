@@ -1,6 +1,6 @@
 # Sortowanie
 
--- Porządkowanie zbioru na podstawie kolumny
+- Porządkowanie zbioru na podstawie kolumny
 ```sql
 SELECT * FROM customer
 ORDER BY first_name
