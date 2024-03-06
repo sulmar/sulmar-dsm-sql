@@ -34,4 +34,15 @@ FROM
 WHERE
 	DATEDIFF(day, payment_date, last_update) > 200
 
+-- Wyœwietl p³atnoœci, których duration by³ krótszy ni¿ 1 rok
+SELECT
+	payment_date,
+	last_update,
+	DATEDIFF(year, payment_date, last_update) AS duration_years
+FROM
+	payment
+WHERE
+	DATEDIFF(year, payment_date, last_update) < 1
+
+
 
