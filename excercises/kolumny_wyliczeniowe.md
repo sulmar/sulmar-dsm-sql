@@ -19,3 +19,13 @@ SELECT
 FROM
    customer
 ```
+
+```sql
+SELECT
+   CONCAT(UPPER(LEFT(last_name, 1)), LOWER(SUBSTRING(last_name, 2, LEN(last_name)))) AS capitalized_last_name,
+   CONCAT(UPPER(LEFT(first_name, 1)), LOWER(SUBSTRING(first_name, 2, LEN(first_name)))) AS capitalized_first_name,
+   LOWER(email) as email_normalized,
+   SUBSTRING(email, CHARINDEX('@', email), LEN(email)) AS domian
+FROM
+   customer
+```
