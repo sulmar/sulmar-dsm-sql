@@ -45,6 +45,18 @@ SELECT
 	last_name AS [nazwisko aktora] 
 FROM actor
 
+-- Wyœwietl listê 10 filmów 
+-- | tytu³ filmu | opis | kategoria |
+
+SELECT TOP(10) 
+	[title] AS [tytu³ filmu],
+	[description] AS [opis],
+	[rating] as [kategoria]
+FROM film
+
+
+
+
 
 
 
