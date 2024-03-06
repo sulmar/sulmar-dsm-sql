@@ -10,6 +10,7 @@
 
 
 ### Rozwiązanie
+- z użyciem `+`
 ``` sql
 SELECT
    UPPER(LEFT(last_name, 1)) + LOWER(SUBSTRING(last_name, 2, LEN(last_name))) AS capitalized_last_name,
@@ -20,6 +21,7 @@ FROM
    customer
 ```
 
+- z użyciem funkcji `CONCAT`
 ```sql
 SELECT
    CONCAT(UPPER(LEFT(last_name, 1)), LOWER(SUBSTRING(last_name, 2, LEN(last_name)))) AS capitalized_last_name,
