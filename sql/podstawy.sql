@@ -22,6 +22,14 @@ SELECT TOP(100) * FROM customer
 -- Wyœwietl 20 aktorów (imiê i nazwisko)
 -- | first_name | last_name |
 
+SELECT TOP(20) first_name, last_name FROM actor
+
+-- Pobierz unikalne wartoœci z danej kolumny
+SELECT DISTINCT first_name FROM customer 
+
+-- Wyœwietl unikalne imiona aktorów. Ile ich jest?
+SELECT DISTINCT first_name FROM actor
+
 
 
 
