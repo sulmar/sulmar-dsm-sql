@@ -1,5 +1,5 @@
 # Funkcje daty i czasu
-
+## Pobieranie fragmentu daty
 ```sql
 SELECT 
 	payment_date,
@@ -16,4 +16,16 @@ FROM payment
 - **Uwaga:** w celu zwracania prawidłowej wartości `DATEPART(weekday, payment_date)` należy ustawić ustawienia regionalne:
 ```sql
 SET LANGUAGE Polish
+```
+
+## Obliczanie różnicy pomiędzy datami
+
+```sql
+SELECT 
+	payment_date,
+	last_update,
+ 	DATEDIFF(day, payment_date, last_update) AS duration_days,
+	DATEDIFF(month, payment_date, last_update) AS duration_months,
+	DATEDIFF(year, payment_date, last_update) AS duration_years
+FROM payment
 ```
