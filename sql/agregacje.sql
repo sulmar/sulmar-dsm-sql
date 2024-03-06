@@ -38,14 +38,3 @@ WHERE
 
 -- Zadanie: Oblicz ile jest ³¹cznie filmów w kategoriach PG i R
 
-
-
-
-
-
-
-
-
-
-
-
