@@ -85,8 +85,24 @@ GROUP BY
 	country.country
 ORDER BY customer_count DESC
 
--- ZnajdŸ najczêœciej wypo¿yczane filmy	
+-- ZnajdŸ najczêœciej wypo¿yczane filmy	TOP(10)
 -- | title | rental_count | 
+
+SELECT TOP(10)
+	film.title,
+	count(*) as rental_count
+FROM 
+	film
+	   INNER JOIN inventory as i
+			ON i.film_id = film.film_id
+       INNER JOIN rental as r
+	        ON r.inventory_id = i.inventory_id
+GROUP BY 
+	film.title
+ORDER BY rental_count DESC
+
+-- Poka¿ 5 klientów, którzy najczeœciej wypo¿yczali filmy
+
 
 
 
