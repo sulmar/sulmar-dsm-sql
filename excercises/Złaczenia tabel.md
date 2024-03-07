@@ -22,10 +22,19 @@
 
 
 # Zadanie 3
-- Znajdź aktorów, którzy zagrali w filmach o dinozurach (ang _DINOSAUR_).
+- Wyświetl tytuły filmów i rok produkcji w których zagrał `HOPKINS`
+| title | release_year | 
+| ---- | ---- |
+| ... | ... | 
+
 
 # Zadanie 4
-- Znadź filmy w których zagrał wybrany aktor
+- Wyświetl aktorów, którzy zagrali w filmach o dinozurach (ang _DINOSAUR_).
+| actor_full_name | title | release_year | description |
+| ---- | ---- | ---- | ---- |
+| ... | ... | ... | ... |
+
+
 
 # Zadanie 5
 
