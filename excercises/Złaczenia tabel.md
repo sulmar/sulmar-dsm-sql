@@ -9,6 +9,21 @@
 | 3 | Linda Williams | Jon Stephens | 2005-06-15 00:54:12.000 | 5.99 |
 | ... | ... | ... | ... | ... |
 
+## Rozwiązanie
+```sql
+SELECT
+	payment.payment_id,
+	CONCAT(customer.first_name, ' ', customer.last_name) AS customer_full_name,
+	CONCAT(staff.first_name, ' ', staff.last_name) AS staff_full_name,
+	payment.payment_date,
+	amount
+FROM payment
+	INNER JOIN customer
+		ON payment.customer_id = customer.customer_id
+    INNER JOIN staff
+		ON payment.staff_id = staff.staff_id
+```
+
 # Zadanie 2
 
 - Wyświetl klientów tylko z Polski
