@@ -148,17 +148,6 @@ FROM film
 		ON film_actor.actor_id = actor.actor_id
 
 
--- Wyœwietl p³atnoœci w nastêpuj¹cy sposób
--- | payment_id | customer_full_name | staff_full_name | payment_date | amount |
 
-SELECT
-	payment.payment_id,
-	payment.payment_date,
-	amount,
-	CONCAT(customer.first_name, ' ', customer.last_name) AS customer_full_name,
-	CONCAT(staff.first_name, ' ', staff.last_name) AS staff_full_name
-FROM payment
-	INNER JOIN customer
-		ON payment.customer_id = customer.customer_id
-    INNER JOIN staff
-		ON payment.staff_id = staff.staff_id
+
+
