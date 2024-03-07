@@ -83,6 +83,21 @@ WHERE last_name = 'HOPKINS'
 | ... | ... | ... | ... |
 
 
+## Rozwiązanie
+```sql
+SELECT
+       film.title,
+       film.description,
+       CONCAT(actor.first_name, ' ' , actor.last_name) AS actor_full_name
+FROM film
+	INNER JOIN film_actor
+		ON film.film_id = film_actor.film_id
+	INNER JOIN actor
+	    ON film_actor.actor_id = actor.actor_id
+ WHERE 
+	title LIKE '%DINOSAUR%' OR description LIKE '%DINOSAUR%'
+```
+
 
 # Zadanie 5
 
