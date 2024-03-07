@@ -56,10 +56,37 @@ FROM
 			customer AS c
 				ON r.customer_id = c.customer_id
 
-
-
-
+select
+	f.title,
+	f.description,
+	l.name
+from 
+	film as f
+		inner join language as l
+			on f.language_id = l.language_id
 	
+
+-- Wiele z³¹czeñ wewnêtrznych
+SELECT 
+	first_name, 
+	last_name, 	
+	address.address,
+	address.postal_code,
+	address.city_id,
+	city.city,
+	city.country_id,
+	country.country
+FROM 
+	customer
+	INNER JOIN address 
+		ON customer.address_id = address.address_id
+	INNER JOIN city
+		ON address.city_id = city.city_id
+	INNER JOIN country
+		ON city.country_id = country.country_id
+
+-- Wyœwietl p³atnoœci wraz z informacjami o pracowniku
+-- | payment_id | payment_date | staff_first_name | staff_last_name | city | country |
 
 
 
