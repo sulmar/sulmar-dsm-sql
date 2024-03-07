@@ -10,3 +10,7 @@
   
 # Zadanie 2 - Aktorki
 - Oblicz ile jest aktorek zakładając, że ich imię kończy się na `A`
+
+| actor_count |
+| ---------- |
+| ... | 
