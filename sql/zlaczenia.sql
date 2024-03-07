@@ -89,5 +89,41 @@ FROM
 -- | payment_id | payment_date | staff_first_name | staff_last_name | city | country |
 
 
+ SELECT
+	payment.payment_id,
+	payment.payment_date,
+	staff.first_name,
+	staff.last_name,	
+	city.city,
+	country.country
+FROM 
+	payment
+		INNER JOIN staff
+              ON payment.staff_id = staff.staff_id
+		INNER JOIN address
+			ON staff.address_id = address.address_id
+        INNER JOIN city
+			ON address.city_id = city.city_id
+		 INNER JOIN country
+            ON city.country_id = country.country_id
+
+
+SELECT * FROM film 	
+
+SELECT * FROM category
+
+
+SELECT 
+	film.title,
+	category.name
+FROM film_category
+	INNER JOIN film
+		ON film_category.film_id = film.film_id
+	INNER JOIN category
+		ON film_category.category_id = category.category_id
+ORDER BY title
+
+-- Wyœwietl imiê i nazwisko aktora oraz tytu³ filmu w którym zagra³
+-- | actor_first_name | actor_last_name | title |
 
 
