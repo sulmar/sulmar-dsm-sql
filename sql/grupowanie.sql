@@ -117,11 +117,12 @@ ORDER BY
 	customer_full_name
 
 -- Kolejnoœæ przetwarzania zapytania SQL
--- 1. FROM
--- 2. WHERE
--- 3. GROUP BY
--- 4. SELECT 
--- 5. ORDER BY
+-- 1. (FROM)
+-- 2. (WHERE)
+-- 3. (GROUP BY)
+-- 4. (HAVING)
+-- 5. SELECT 
+-- 6. (ORDER BY)
 
 -- Uwaga: z aliasu mo¿emy skorzystaæ tylko w klauzuli ORDER BY
 
@@ -134,20 +135,4 @@ FROM
 	rental
 GROUP BY DATENAME(WEEKDAY,rental_date)
 ORDER BY rental_weekname desc
-
--- ZnajdŸ aktorów, którzy zagrali wiêcej ni¿ w 30 filmach
-SELECT 
-	actor.actor_id,
-	COUNT(*) as film_count
-FROM actor
-INNER JOIN film_actor
-	ON actor.actor_id = film_actor.actor_id
--- WHERE COUNT(*) > 30 -- B³¹d: Wartoœæ zagregowana nie mo¿e wystêpowaæ w klauzuli WHERE.	
-GROUP BY
-	actor.actor_id
-HAVING COUNT(*) > 30	-- Filtrowanie na podstawie wartoœci zagregowanej
-ORDER BY film_count DESC
-
-
-
 
