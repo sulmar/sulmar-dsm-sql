@@ -28,6 +28,19 @@
 | ---- | ---- |
 | ... | ... | 
 
+## Rozwiązanie
+```sql
+SELECT
+	film.title,
+	release_year
+FROM
+	film
+	INNER JOIN film_actor
+		ON film.film_id = film_actor.film_id
+	INNER JOIN actor
+		ON film_actor.actor_id = actor.actor_id
+WHERE last_name = 'HOPKINS'
+```
 
 # Zadanie 4
 - Wyświetl aktorów, którzy zagrali w filmach o dinozurach (ang _DINOSAUR_).
