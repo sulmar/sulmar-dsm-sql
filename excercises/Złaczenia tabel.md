@@ -20,6 +20,24 @@
 | 3 | Linda Williams | Jastrzebie-Zdrj | Poland |
 | ... | ... | ... | ... |
 
+## Rozwiązanie
+```sql
+SELECT
+	customer_id,
+	CONCAT (customer.first_name, ' ', customer.last_name) AS customer_full_name,
+	city.city,
+	country.country
+FROM
+	customer
+	INNER JOIN address
+              ON customer.address_id = address.address_id
+	INNER JOIN city
+		ON address.city_id = city.city_id
+	INNER JOIN country
+		ON city.country_id = country.country_id
+WHERE country = 'POLAND'
+ORDER BY customer_full_name
+```
 
 # Zadanie 3
 - Wyświetl tytuły filmów i rok produkcji w których zagrał `HOPKINS`
