@@ -21,6 +21,21 @@
 | sobota | 2311 |
 
 
+## Rozwiązanie
+
+```sql
+
+SET LANGUAGE Polish
+
+SELECT TOP(3)
+	DATENAME(WEEKDAY, rental_date) as rental_weekname,
+	COUNT(*) as qunatity
+FROM
+	rental
+GROUP BY DATENAME(WEEKDAY,rental_date)
+ORDER BY rental_weekname desc
+```
+
 # Zadanie - Pracowici aktorzy
 
 - Znajdź aktorów, którzy zagrali więcej niż w 2 filmach
