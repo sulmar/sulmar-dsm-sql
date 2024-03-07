@@ -38,7 +38,7 @@ ORDER BY rental_weekname desc
 
 # Zadanie - Pracowici aktorzy
 
-- Znajdź aktorów, którzy zagrali więcej niż w 2 filmach
+- Znajdź aktorów, którzy zagrali więcej niż w 30 filmach
 
 | actor_id | actor_first_name | actor_last_name | film_count |
 | ---- | ---- | ---- | ---- |
