@@ -16,10 +16,11 @@ SELECT
   [length],
   rating
 FROM 
-	film
+  film
 WHERE 
-	([description] like '%cat%' OR [description] like '%dog%') 
-	AND (rating = 'G' OR rating = 'PG') AND [length] <= 60
+  ([description] like '%cat%' OR [description] like '%dog%') 
+  AND (rating = 'G' OR rating = 'PG')
+  AND [length] <= 60
 ```
   
 # Zadanie 2 - Aktorki
