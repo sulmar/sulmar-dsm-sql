@@ -7,6 +7,20 @@
 | ---------- | --------- | ---------- | --------- | 
 | ... | ... | ...| ... | ... | 
 
+
+## Rozwiązanie
+```sql
+SELECT 
+  title,
+  [description],
+  [length],
+  rating
+FROM 
+	film
+WHERE 
+	([description] like '%cat%' OR [description] like '%dog%') 
+	AND (rating = 'G' OR rating = 'PG') AND [length] <= 60
+```
   
 # Zadanie 2 - Aktorki
 - Oblicz ile jest aktorek zakładając, że ich imię kończy się na `A`
