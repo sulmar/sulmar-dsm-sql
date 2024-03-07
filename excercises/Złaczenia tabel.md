@@ -1,4 +1,4 @@
-### Zadanie 1
+# Zadanie 1
 
 - Wyświetl płatności w następujący sposób:
 
@@ -9,7 +9,7 @@
 | 3 | Linda Williams | Jon Stephens | 2005-06-15 00:54:12.000 | 5.99 |
 | ... | ... | ... | ... | ... |
 
-### Zadanie 2
+# Zadanie 2
 
 - Wyświetl klientów tylko z Polski
 
@@ -21,14 +21,13 @@
 | ... | ... | ... | ... |
 
 
-### Zadanie 3
+# Zadanie 3
+- Znajdź aktorów, którzy zagrali w filmach o dinozurach (ang _DINOSAUR_).
 
-- Znajdź aktorów, którzy zagrali w wybranym filmie
-
-### Zadanie 4
+# Zadanie 4
 - Znadź filmy w których zagrał wybrany aktor
 
-### Zadanie 5
+# Zadanie 5
 
 - Wyświetl informacje o wypożyczonych filmach w styczniu (w dowolnym roku)
 
