@@ -29,3 +29,13 @@ WHERE
 | actor_count |
 | ---------- |
 | ... | 
+
+## Rozwiązanie
+```sql
+SELECT
+	count(first_name) as actor_count
+FROM 
+	actor
+WHERE 
+	first_name LIKE '%A'
+```
