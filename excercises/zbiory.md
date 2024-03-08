@@ -42,8 +42,9 @@ WHERE i.store_id = 2
 ## Rozwiązanie
 
 ```sql
-SELECT film_id FROM film
-EXCEPT SELECT distinct f.film_id FROM film AS f
+SELECT film_id, title FROM film
+EXCEPT SELECT distinct f.film_id, f.title 
+FROM film AS f
 INNER JOIN
        inventory AS i
               ON f.film_id = i.film_id
