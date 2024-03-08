@@ -48,6 +48,15 @@ FROM
 WHERE
 	return_date IS NULL
 
+-- Zamiana okreœlonej wartoœci na wartoœæ NULL
+SELECT 
+	rating,
+	CASE rating
+		WHEN 'G' THEN NULL		
+		ELSE rating
+	END
+FROM film
+
 
 
 
