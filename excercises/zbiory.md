@@ -39,6 +39,36 @@ WHERE i.store_id = 2
 | .. |
 | ... | 
 
+## Rozwiązanie
+
+```sql
+select film_id
+
+from film
+
+except
+
+SELECT distinct
+
+       f.film_id
+
+FROM
+
+       film AS f
+
+INNER JOIN
+
+       inventory AS i
+
+              ON f.film_id = i.film_id
+
+INNER JOIN
+
+rental AS r
+
+ON i.inventory_id = r.inventory_id
+```
+
 
 
 # Zadanie 3 - Unikaty
