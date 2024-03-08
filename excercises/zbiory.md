@@ -16,10 +16,10 @@
 
 | title | 
 | ---- | 
-| Action |
-| Animation |
-| Children | 
-| ... | ... |
+| ... |
+| .. |
+| ... | 
+
 
 
 # Zadanie 3 - Unikaty
