@@ -1,0 +1,179 @@
+{
+  "main": {
+    "id": "5a8ce9e5b865c1d9",
+    "type": "split",
+    "children": [
+      {
+        "id": "aa5a30b50a12c5df",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6e8bb27bd830cb57",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Zbiory.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "516767f60520c3db",
+    "type": "split",
+    "children": [
+      {
+        "id": "7d6bc7ed6445e3f5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "73d698e0e87d2da2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "2165550f4fb88ea6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "83c2d912c2bfe289",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0b712b3ef8346324",
+    "type": "split",
+    "children": [
+      {
+        "id": "296dd5ac661158a7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "37b0c89a290fa256",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Zbiory.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4203b54759ac696c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Zbiory.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e831a55a5389a00a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "b63536567dc18c23",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Zbiory.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Otwórz okno szybkiej zmiany pliku": false,
+      "graph:Otwórz graf": false,
+      "canvas:Stwórz nowe płótno": false,
+      "daily-notes:Otwórz dzisiejszą notatkę": false,
+      "templates:Wstaw szablon": false,
+      "command-palette:Otwórz paletę poleceń": false
+    }
+  },
+  "active": "6e8bb27bd830cb57",
+  "lastOpenFiles": [
+    "NULL.md",
+    "excel-import-data-from-database.png",
+    "Funkcje okienkowe.md",
+    "Grupowanie.md",
+    "Zbiory.md",
+    "Podzapytania.md",
+    "Projekcja.md",
+    "Sortowanie.md",
+    "Wprowadzenie.md",
+    "Podstawy.md",
+    "line-numbers.png",
+    "Agenda.md",
+    "Narzedzia.md",
+    "Złączenia tabel.md",
+    "Funkcje tekstowe.md",
+    "Funkcje daty i czasu.md",
+    "Funkcje arytmetyczne.md",
+    "Narzędzia.md",
+    "Filtrowanie.md",
+    "Zbioru.md",
+    "Aktualizacja.md",
+    "Funkcje _daty_czas — kopia.md",
+    "Funkcje _daty_czas.md",
+    "Filtrowanie rekordów.md",
+    "Funkcje agregujące — kopia (2).md",
+    "Funkcje agregujące — kopia.md",
+    "Funkcje agregujące.md"
+  ]
+}
