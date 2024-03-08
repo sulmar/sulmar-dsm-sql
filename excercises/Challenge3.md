@@ -7,6 +7,22 @@
 | ---------- | --------- | 
 | ... | ... | 
 
+## Rozwiązanie
+```sql
+
+SELECT TOP(1)
+	s.store_id,
+	SUM(p.amount) as total_revenue
+FROM payment AS p
+	INNER JOIN staff AS s
+		ON p.staff_id = s.staff_id
+	INNER JOIN store AS st
+		ON st.store_id = s.store_id
+GROUP BY
+	s.store_id
+ORDER BY total_revenue
+```
+
 # Zadanie 2
 
 - Utwórz zapytanie, które wyświetli ilość wypożyczeń i dochód z filmów w podziale na kategorie wiekowe (rating)
