@@ -4,11 +4,30 @@
 
 | title | 
 | ---- | 
-| Action |
-| Animation |
-| Children | 
+| ... |
+| ... |
 | ... | ... |
 
+## Rozwiązanie
+
+```sql
+SELECT
+  f.title
+FROM film AS f
+INNER JOIN
+    inventory AS i
+      ON f.film_id = i.film_id
+WHERE i.store_id = 1
+
+INTERSECT
+SELECT
+   f.title
+FROM film AS f
+INNER JOIN
+   inventory AS i
+      ON f.film_id = i.film_id
+WHERE i.store_id = 2
+```
 
 # Zadanie 2 - Niewypożyczane filmy
 
